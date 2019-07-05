@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <corners
+        android:radius="2dp" />
+    <!--If your shape requires only one solid color-->
+    <!--<solid
+        android:color="#FFFFFF" />-->
+
+    <size
+        android:width="0dp"
+        android:height="0dp" />
+
+    <!--Use android:dashWidth="2dp" and android:dashGap="2dp"
+    to add dashes to your stroke-->
+    <stroke
+        android:width="2dp"
+        android:color="@android:color/holo_blue_dark" />
+
+</shape>
+
+<!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >-->
+
+    <!--<item android:width="5dp" android:height="5dp" android:left="20dp">-->
+        <!--<rotate android:fromDegrees="45"-->
+            <!--android:pivotX="0"-->
+            <!--android:pivotY="0">-->
+            <!--<shape>-->
+                <!--<solid android:color="#0189ff"/>-->
+                <!--<size-->
+                <!--android:width="82dp"-->
+                <!--android:height="41dp" />-->
+            <!--</shape>-->
+        <!--</rotate>-->
+    <!--</item>-->
+
+    <!--<item android:width="20dp" android:height="7dp" android:right="5dp">-->
+        <!--<shape>-->
+            <!--<solid android:color="#0189ff"/>-->
+            <!--<corners-->
+                <!--android:bottomLeftRadius="2dp"-->
+                <!--android:topLeftRadius="2dp"/>-->
+            <!--<size-->
+                <!--android:width="82dp"-->
+                <!--android:height="41dp" />-->
+        <!--</shape>-->
+    <!--</item>-->
+
+<!--</layer-list>-->
