@@ -50,7 +50,7 @@ public class BasicHealthCheckupActivity extends AppCompatActivity {
         pulseTestFrag.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                loadFragment(new PulseTextBHCFragment());
+                loadFragment(new PulseTestBHCFragment());
             }
         });
 

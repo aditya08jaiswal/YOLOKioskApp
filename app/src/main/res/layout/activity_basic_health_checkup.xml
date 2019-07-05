@@ -88,6 +88,9 @@
         android:id="@+id/bhc_frameLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
