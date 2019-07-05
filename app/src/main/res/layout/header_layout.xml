@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/heading_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/yolo_logo"
+        android:background="@drawable/yolo_logo"
+        android:layout_width="250dp"
+        android:layout_height="60dp" />
+
+    <Button
+        android:id="@+id/welcome_guest_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Guest"
+        android:padding="8dp"
+        android:textSize="12sp"
+        android:layout_toStartOf="@+id/logout_btn"
+        android:textColor="@android:color/white"
+        android:background="@android:color/darker_gray"/>
+
+    <Button
+        android:id="@+id/logout_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textSize="12sp"
+        android:layout_marginStart="8dp"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_dark"/>
+
+</RelativeLayout>
