@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_1"
+    tools:context=".BasicHealthCheckupActivity">
+
+    <include layout="@layout/header_layout" />
+
+    <TextView
+        android:id="@+id/healthiness_checkup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HEALTHINESS CHECKUP"
+        android:padding="4dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <LinearLayout
+        android:id="@+id/checkup_name_layout"
+        android:gravity="center"
+        android:padding="4dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/height_checkup_tv"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="@drawable/menu_bg0"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="HEIGHT"
+            android:textColor="@android:color/holo_blue_dark"/>
+
+        <TextView
+            android:id="@+id/body_stats_checkup_tv"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="-8dp"
+            android:background="@drawable/menu_bg1"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="BODY STATS"
+            android:textColor="@android:color/holo_blue_dark"/>
+
+        <TextView
+            android:id="@+id/blood_pressure_checkup_tv"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="-8dp"
+            android:background="@drawable/menu_bg1"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="BLOOD PRESSURE"
+            android:textColor="@android:color/holo_blue_dark"/>
+
+        <TextView
+            android:id="@+id/pulse_test_checkup_tv"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="-8dp"
+            android:background="@drawable/menu_bg1"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="PULSE TEST"
+            android:textColor="@android:color/holo_blue_dark"/>
+
+        <TextView
+            android:id="@+id/temperature_checkup_tv"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="-8dp"
+            android:background="@drawable/menu_bg2"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="TEMPERATURE"
+            android:textColor="@android:color/holo_blue_dark"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <include layout="@layout/left_side_options_layout" />
+
+        <FrameLayout
+            android:id="@+id/bhc_frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="60dp"
+            android:layout_marginEnd="60dp"/>
+
+    </LinearLayout>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
