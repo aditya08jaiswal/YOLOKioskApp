@@ -7,7 +7,7 @@
     android:background="@drawable/background_1"
     android:orientation="vertical">
 
-    <include layout="@layout/header" />
+    <include layout="@layout/header_layout" />
 
     <LinearLayout
 
