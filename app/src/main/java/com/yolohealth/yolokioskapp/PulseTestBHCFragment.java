@@ -17,7 +17,7 @@ public class PulseTestBHCFragment extends Fragment {
     View view;
     GifImageView instructionAudioGif;
     MediaPlayer mediaPlayer;
-    ImageView playAudioImage;
+//    ImageView playAudioImage;
 
     public PulseTestBHCFragment() {
         // Required empty public constructor
@@ -38,18 +38,17 @@ public class PulseTestBHCFragment extends Fragment {
 
         view = inflater.inflate(R.layout.fragment_pulse_test_bhc, container, false);
         instructionAudioGif = view.findViewById(R.id.instruction_playing_image_gif);
-        playAudioImage = view.findViewById(R.id.pulse_test_play_iv);
+//        playAudioImage = view.findViewById(R.id.pulse_test_play_iv);
 
         try{
             mediaPlayer.start();
-
         }catch(Exception e){e.printStackTrace();}
 
         instructionAudioGif.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mediaPlayer.start();
-                playAudioImage.setVisibility(View.GONE);
+//                playAudioImage.setVisibility(View.GONE);
             }
         });
 
