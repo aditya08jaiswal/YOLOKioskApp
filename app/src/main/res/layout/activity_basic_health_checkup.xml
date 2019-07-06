@@ -84,13 +84,23 @@
 
     </LinearLayout>
 
-    <FrameLayout
-        android:id="@+id/bhc_frameLayout"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="60dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginEnd="60dp"/>
+        android:orientation="horizontal">
+
+        <include layout="@layout/left_side_options_layout" />
+
+        <FrameLayout
+            android:id="@+id/bhc_frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="60dp"
+            android:layout_marginEnd="60dp"/>
+
+    </LinearLayout>
+
+
 
 </androidx.appcompat.widget.LinearLayoutCompat>

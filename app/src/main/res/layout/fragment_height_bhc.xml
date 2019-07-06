@@ -1,14 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
     tools:context=".HeightBHCFragment">
 
-    <TextView
-        android:layout_width="match_parent"
+    <androidx.cardview.widget.CardView
+        android:layout_width="800dp"
         android:layout_height="match_parent"
-        android:text="hello_height_fragment" />
+        android:layout_marginEnd="30dp"
+        app:cardBackgroundColor="#A6FFFFFF">
 
-</RelativeLayout>
+        <ImageView
+            android:layout_width="800dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="12dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/adult_height_measure" />
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/height_audio_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#A6000000"
+            app:cardCornerRadius="8dp">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/instruction_playing_image_gif"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/instruction_playing" />
+
+            <ImageView
+                android:id="@+id/height_play_iv"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/play_button"
+                android:visibility="visible" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/height_audio_card"
+            android:layout_marginTop="4dp"
+            app:cardBackgroundColor="#80000000"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Listen to audio instructions before processing start"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/height_start_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@android:color/holo_green_light"
+                    android:text="START"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/height_manual_entry_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/holo_orange_light"
+                android:text="MANUAL ENTRY"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/height_skip_test_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_red_dark"
+                android:text="SKIP TEST"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
