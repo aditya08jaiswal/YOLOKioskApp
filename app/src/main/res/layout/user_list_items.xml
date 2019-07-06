@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/consult_doctor"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_background"
+            android:orientation="vertical">
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="Consult Doctor"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="20sp"-->
+
+            <!--/>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="7"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/userProfile"
+                    android:layout_gravity="center"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/margin_10dp"
+                    android:src="@drawable/newsthumbplaceholder" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:id="@+id/userDetails"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_30dp"
+                    android:orientation="vertical">
+
+                    <com.yolohealth.yolokioskapp.widget.CustomTextView
+                        android:id="@+id/username"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:text="dsfdsfdsfsdf"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/common_text_size_12" />
+
+                    <com.yolohealth.yolokioskapp.widget.CustomTextView
+                        android:id="@+id/userGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:text="dsfdsfdsfsdf"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/common_text_size_12" />
+
+                    <com.yolohealth.yolokioskapp.widget.CustomTextView
+                        android:id="@+id/userAge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:text="dsfdsfdsfsdf"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/common_text_size_12" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/startHealthCheckup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10dp"
+                android:background="@color/logo_green"
+                android:text="Start Health Checkup"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+
+                />
+            <com.yolohealth.yolokioskapp.widget.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/createUser"
+             android:visibility="gone"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="dsfdsfdsfsdf"
+                android:layout_marginTop="-50dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_text_size_12"
+
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!--<androidx.cardview.widget.CardView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/margin_8dp"-->
+    <!--android:layout_marginTop="@dimen/margin_10dp"-->
+    <!--android:layout_marginRight="@dimen/margin_8dp"-->
+    <!--android:layout_marginBottom="@dimen/padding_10dp"-->
+    <!--android:padding="@dimen/padding_10dp"-->
+    <!--app:cardCornerRadius="5dp"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--app:cardElevation="5dp">-->
+
+    <!--<View-->
+    <!--android:layout_width="150dp"-->
+    <!--android:layout_height="2dp"-->
+    <!--android:layout_below="@+id/button_layout"-->
+    <!--android:background="#c7e4f4"-->
+    <!--android:visibility="gone" />-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/userProfile"-->
+    <!--android:layout_width="150dp"-->
+    <!--android:layout_height="150dp"-->
+    <!--android:scaleType="fitXY"-->
+    <!--android:src="@drawable/newsthumbplaceholder" />-->
+
+    <!--<in.yolohealth.saas.widget.CustomTextView-->
+    <!--android:id="@+id/username"-->
+    <!--android:layout_width="150dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:padding="10dp"-->
+    <!--android:text="dsfdsfdsfsdf"-->
+    <!--android:textColor="@color/black"-->
+    <!--android:textSize="@dimen/common_text_size_12" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--</androidx.cardview.widget.CardView>-->
+
+</RelativeLayout>

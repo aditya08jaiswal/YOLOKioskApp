@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/logo_green"
+        app:srcCompat="@drawable/alert_app_logo"
+        android:theme="@style/PrimaryActionButton"
+
+        android:tint="@color/white"
+        app:rippleColor="@color/logo_green"
+        app:borderWidth="3dp"
+        app:elevation="0dp"
+        />
+    <in.yolohealth.saas.widget.RoundedImageView
+        android:id="@+id/imageViewCancel"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/circle_white_bg"
+        android:backgroundTint="#fff"
+        android:src="@drawable/cross"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/tvLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2nd"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity="bottom|end" />
+</RelativeLayout>

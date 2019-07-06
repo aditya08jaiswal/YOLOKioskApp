@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
@@ -6,8 +6,73 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:windowFullscreen">true</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="colorControlNormal">@color/primaryColorDark</item>
+    </style>
+    <style name="menucolor" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:itemBackground">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="toolbartheme" parent="Theme.AppCompat.Light">
+
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+    <style name="PrimaryActionButton" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/logo_green</item>
+    </style>
+    <style name="Dialogalert" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:textSize">@dimen/common_text_size_16</item>
+        <item name="android:textColor">@color/primaryColorDark</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:actionBarItemBackground">@color/white</item>
+    </style>
+    <style name="ThemeOverlay.AppCompat.navTheme">
+
+        <!-- Color of text and icon when SELECTED -->
+        <item name="colorPrimary">@color/logo_green</item>
+        <item name="android:textColorSecondary">@color/logo_green</item>
+        <!-- Background color when SELECTED -->
+        <item name="colorControlHighlight">#fafafa</item>
+        <item name="android:textSize">14sp</item>
 
     </style>
+    <style name="TabLayoutTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TextLabel" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <!--<style name="TransparentTheme" parent="Theme.AppCompat.NoActionBar">-->
+        <!--<item  name="android:background">@android:color/transparent</item>-->
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!--<item name="android:windowBackground">@color/transparent_dialog</item>-->
+        <!--<item name="android:colorBackgroundCacheHint">@null</item>-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+    <!--</style>-->
 
 </resources>

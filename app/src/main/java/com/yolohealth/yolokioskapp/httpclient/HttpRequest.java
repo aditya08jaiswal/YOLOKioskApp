@@ -18,6 +18,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.yolohealth.yolokioskapp.helperclasses.ThisAppConfig;
 import com.yolohealth.yolokioskapp.helperclasses.ThisUserConfig;
 import com.yolohealth.yolokioskapp.platform.Platform;
+import com.yolohealth.yolokioskapp.user.UserAttributes;
 import com.yolohealth.yolokioskapp.utils.Logger;
 
 import org.json.JSONException;
@@ -49,6 +50,9 @@ public abstract class HttpRequest {
 	public String GetServerAuthenticatedURL(String URL)
 	{
 		Uri.Builder builder = Uri.parse(URL).buildUpon();
+		builder.appendQueryParameter(UserAttributes.AUTHKEY, ThisAppConfig.getInstance().getString(UserAttributes.AUTHKEY));
+		builder.appendQueryParameter(UserAttributes.AUTH_SECRET, ThisAppConfig.getInstance().getString(UserAttributes.AUTH_SECRET));
+
 		builder.appendQueryParameter(ThisAppConfig.APPUUID, ThisAppConfig.getInstance().getString(ThisAppConfig.APPUUID));
 		builder.appendQueryParameter(ThisUserConfig.USER_ID, ThisUserConfig.getInstance().getString(ThisUserConfig.USER_ID));
 		builder.appendQueryParameter(ThisUserConfig.APP_SESSION_TOKEN, ThisUserConfig.getInstance().getString(ThisUserConfig.APP_SESSION_TOKEN));

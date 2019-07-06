@@ -153,6 +153,13 @@ public class UserAttributes {
     public static final int URINE_CHECKUP = 9;
     public static final int EYE_CHECKUP = 10;
     public static final String HASH_STRING = "hash_string";
+    public static final String QBCALLERID = "qbcallerid";
+    public static final String AUTHKEY = "authkey";
+    public static final String AUTH_SECRET ="authsecret" ;
+    public static final String QBAUTHKEY = "qbauthkey";
+    public static final String QBAUTH_SECRET = "qbauthsecret";
+
+
     public static String DOB="dob";
 
     public static class BOOKINGCONSTANTS
@@ -257,7 +264,7 @@ public class UserAttributes {
     //QB Chat
     public static final String QBUSERNAME = "qbusername";
     public static final String QBPASSWORD = "qbpassword";
-    public static final String QBID = "qbid";
+    public static final String QBID = "qbappid";
 
     //Health Package
     public static final String PACKAGEID = "packageid";

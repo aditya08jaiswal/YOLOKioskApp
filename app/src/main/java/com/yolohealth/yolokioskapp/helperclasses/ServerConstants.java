@@ -6,8 +6,8 @@ public class ServerConstants {
 	public static final String SUPPORT = "/Support";
 	public static final boolean QB_DEBUG_ENABLED = true;
 	public static final String UTIL = "/Utils";
-//	public static String SERVER_ADDRESS = "https://healthatm.in/api";
-	public static String SERVER_ADDRESS = "https://yolohealth.in/api";
+	public static String SERVER_ADDRESS = "https://healthatm.in/api";
+//	public static String SERVER_ADDRESS = "https://yolohealth.in/api";
 //	public static String SERVER_ADDRESS = "http://192.168.31.150/api";
 
 	public static String USER="/User";

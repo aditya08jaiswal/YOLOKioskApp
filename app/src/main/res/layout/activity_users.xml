@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_1"
+    android:layout_height="match_parent"
+   >
+    <include layout="@layout/header"/>
+
+
+
+    <com.yolohealth.yolokioskapp.widget.CustomTextView
+        android:id="@+id/selectUserText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/common_text_size_16"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/padding_10dp"
+        android:layout_below="@+id/header"
+        android:textStyle="bold"
+        android:textColor="@color/primaryColor"
+        android:text="SELECT USER"
+
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/selectUserText"
+        android:id="@+id/users"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="true"
+        android:paddingLeft="@dimen/padding_10dp"
+        android:paddingRight="@dimen/padding_10dp"
+        android:paddingBottom="@dimen/padding_10dp"
+      >
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>
