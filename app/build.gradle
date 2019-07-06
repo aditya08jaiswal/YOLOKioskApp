@@ -67,6 +67,8 @@ dependencies {
 
     implementation('com.razorpay:checkout:1.4.5')
 
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.3'
+
     implementation 'com.github.bumptech.glide:glide:3.8.0'
     implementation 'se.emilsjolander:stickylistheaders:2.7.0'
     implementation 'jp.co.recruit_mp:LightCalendarView:1.0.1'

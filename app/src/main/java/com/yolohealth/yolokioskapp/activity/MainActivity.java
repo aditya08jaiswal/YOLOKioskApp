@@ -59,4 +59,9 @@ CardView consult_doctor,health_checkup,health_history;
         });
 
     }
+
+    @Override
+    public void onBackPressed() {
+
+    }
 }

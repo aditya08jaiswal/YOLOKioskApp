@@ -3,6 +3,7 @@ package com.yolohealth.yolokioskapp.adapter;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,10 +11,12 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.yolohealth.yolokioskapp.BasicHealthCheckupActivity;
 import com.yolohealth.yolokioskapp.R;
 import com.yolohealth.yolokioskapp.helperclasses.BundleConstants;
 import com.yolohealth.yolokioskapp.model.UserModel;
@@ -64,13 +67,18 @@ public class UsersListAdapter extends RecyclerView.Adapter<UsersListAdapter.View
             holder.mCreateUser.setVisibility(View.VISIBLE);
             holder.mCreateUser.setText("Create User");
             holder.mUserDetail.setVisibility(View.GONE);
-            holder.mUserImage.setOnClickListener(new View.OnClickListener() {
+            holder.mCreateUser.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
 //                    Intent intent=new Intent(mContext, NewUserActivity.class);
 //                    intent.putExtra(BundleConstants.PHONE,mPhoneNumber);
 //                    intent.putExtra(BundleConstants.OTP,mOtp);
 //                    mContext.startActivity(intent);
+
+                    Log.d("USSSSSSSSSSERRRR","HHHHHHHHHHHHH");
+                    Intent intent=new Intent(mContext,BasicHealthCheckupActivity.class);
+                    mContext.startActivity(intent);
+
                 }
             });
 

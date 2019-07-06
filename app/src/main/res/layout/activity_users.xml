@@ -18,7 +18,7 @@
         android:textSize="@dimen/common_text_size_16"
         android:layout_centerHorizontal="true"
         android:padding="@dimen/padding_10dp"
-        android:layout_below="@+id/header"
+        android:layout_below="@+id/heading_layout"
         android:textStyle="bold"
         android:textColor="@color/primaryColor"
         android:text="SELECT USER"
