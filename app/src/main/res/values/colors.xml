@@ -1,6 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorAccent">@color/primaryColor</color>
+
+    <color name="cardview_dark_background">#ff202020</color>
+    <color name="cardview_light_background">#fffafafa</color>
+    <color name="cardview_shadow_end_color">#03000000</color>
+    <color name="cardview_shadow_start_color">#37000000</color>
+    <color name="darkPimaryColor">#ff2f9ecc</color>
+
+    <color name="green">#ff4cd964</color>
+
+    <color name="primaryColor">#178fc4</color>
+    <color name="colorPrimary">#178fc4</color>
+    <color name="primaryColorDark">#086f9c</color>
+    <color name="colorPrimaryDark">#086f9c</color>
+    <color name="yolo_blue">#0a94cf</color>
+
+    <color name="textColor">#ff303036</color>
+    <color name="transparent">#00ffffff</color>
+
+    <color name="black_75">#c0000000</color>
+    <color name="black">#ff000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#ff808080</color>
+    <color name="themeblue">#ff04626c</color>
+    <color name="light_gray">#ff636363</color>
+    <color name="rang_red">#b73a2f</color>
+
+    <color name="yolo_ttrans_blue">#450093d6</color>
+    <color name="yolo_lildarkerblue">#ff0178ae</color>
+    <color name="yolo_lillighterblue">#ff1da7e6</color>
+    <color name="yolo_gray">#ffb3b3b3</color>
+    <color name="yolo_white_trans">#cfffff</color>
+    <color name="yolo_lightgray">#ffe4e4e4</color>
+    <color name="card_gray">#CCCCCC</color>
+    <color name="gray_icon_text">#616b6d</color>
+    <color name="textColor_gray">#acabab</color>
+    <color name="textColor_dark_gray">#7e7e7e</color>
+    <color name="red">#f93f4b</color>
+    <color name="status_color_green">#80ae60</color>
+    <color name="light_green">#75b777</color>
+    <color name="range_green">#76a731</color>
+    <color name="logo_green">#8ec640</color>
+
+    <color name="voulme_color">#b9dfdfdf</color>
+    <color name="voulme_up_color">#FFF</color>
+    <color name="tab_unselect_color">#a8236b8b</color>
+    <color name="bottom_item_selected">#297fcc</color>
+    <color name="consult_background">#dbdfe5</color>
+    <color name="transwhite">#c5ffffff</color>
+    <color name="colorButton">#0277bd</color>
+    <color name="dark_gray">#666666</color>
+    <color name="chat_background_green">#cfe7ad</color>
+    <color name="yellow">#daac48</color>
+
 </resources>

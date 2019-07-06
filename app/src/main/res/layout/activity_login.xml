@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_1"
+    android:orientation="vertical">
+
+    <include layout="@layout/header" />
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="PLEASE ENTER MOBILE NO. "
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+
+                android:background="@color/colorAccent"
+
+                android:gravity="center"
+                app:contentColor="@color/white"
+                app:countryPreference="IN,US,NZ"
+                app:showFlag="true" />
+
+            <EditText
+                android:id="@+id/activity_login_phone"
+                android:layout_width="400dp"
+                android:layout_height="60dp"
+
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="20dp"
+                android:layout_toEndOf="@id/ccp"
+                android:background="@android:color/white"
+                android:digits="1234567890"
+
+                android:gravity="center_vertical"
+                android:imeOptions="actionDone"
+                android:inputType="phone"
+
+                android:paddingStart="10dp"
+                android:textColor="@color/gray"
+                android:textColorHint="#8fffffff"
+                android:textSize="30sp"
+
+
+                tools:ignore="ObsoleteLayoutParam" />
+            <!--android:textSize="30sp" />-->
+
+
+            <Button
+                android:id="@+id/activity_login_button"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/activity_registration_phone"
+                android:layout_centerHorizontal="true"
+
+                android:background="@color/colorAccent"
+                android:text="Login"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/invalidPhoneNumberTextView"
+            android:layout_width="525dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/red"
+            android:padding="3dp"
+            android:text="The phone number is not valid"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:visibility="invisible"
+
+            />
+    </LinearLayout>
+</RelativeLayout>

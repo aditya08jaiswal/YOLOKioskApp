@@ -3,16 +3,37 @@
     package="com.yolohealth.yolokioskapp">
 
     <application
+        android:name=".platform.YoloUser"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" android:screenOrientation="landscape">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCIhhbuZ89w8LEAlDOGOPg8sj8wVJNTG2Y" /> <!-- AIzaSyA5nGYv58CdQeuyPHXXSPSqDObcyaAfNPI -->
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_erqcfWlzEjGt9L" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="57cabcee1dd63a83e729c9c53486f0192e30aeef" />
+
+        <activity android:name=".activity.LoginActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation"/>
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
